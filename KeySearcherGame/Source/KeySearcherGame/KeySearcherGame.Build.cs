@@ -8,14 +8,15 @@ public class KeySearcherGame : ModuleRules
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 	
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "EnhancedInput" });
+		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "EnhancedInput", "EnhancedInput" });
 
 		PrivateDependencyModuleNames.AddRange(new string[] { });
 
 		PublicIncludePaths.AddRange(new string[] 
 		{
             "KeySearcherGame/Public/Characters",
-            "KeySearcherGame/Public/Gamemodes"
+            "KeySearcherGame/Public/Gamemodes",
+            "KeySearcherGame/Public/Learn/Characters",
         });
 
 		// Uncomment if you are using Slate UI
