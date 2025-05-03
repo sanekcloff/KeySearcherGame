@@ -72,6 +72,11 @@ void AKSBaseCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 	}
 }
 
+void AKSBaseCharacter::StopMoving()
+{
+	Move(0);
+}
+
 void AKSBaseCharacter::Move(const FInputActionValue& Value)
 {
 	const auto MovementVector = Value.Get<FVector2D>();
